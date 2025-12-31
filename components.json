@@ -3,15 +3,15 @@
   "style": "default",
   "rsc": false,
   "tailwind": {
-    "config": "newutils\\src\\tailwind.config.ts",
-    "css": "newutils\\src\\global.css",
+    "config": "utils\\src\\tailwind.config.ts",
+    "css": "utils\\src\\global.css",
     "baseColor": "neutral",
     "cssVariables": true
   },
   "aliases": {
-    "ui": "@my-refine-project/newlib",
-    "components": "@my-refine-project/newlib/components",
-    "utils": "@my-refine-project/newutils",
-    "hooks": "@my-refine-project/newlib/hooks"
+    "ui": "@my-refine-project/button",
+    "components": "@my-refine-project/button/components",
+    "utils": "@my-refine-project/utils",
+    "hooks": "@my-refine-project/button/hooks"
   }
 }

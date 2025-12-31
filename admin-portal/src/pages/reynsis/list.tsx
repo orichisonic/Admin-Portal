@@ -1,5 +1,6 @@
 import { useList } from "@refinedev/core";
 import { useState, useEffect } from "react";
+import { Button } from "../../components/ui/button";
 
 interface ReynsisRecord {
   id: number;
@@ -83,12 +84,15 @@ export const ReynsisList: React.FC = () => {
           </tbody>
         </table>
       </div>
-      
+      <Button variant="default">默认按钮</Button>
+<Button variant="outline">边框按钮</Button>
+<Button variant="destructive">危险按钮</Button>
       <div className="flex items-center justify-end space-x-2 py-4">
         <div className="text-sm text-muted-foreground">
           共 {query.data?.total || data.length} 条记录
         </div>
       </div>
     </div>
+    
   );
 };

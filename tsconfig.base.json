@@ -29,6 +29,18 @@
       ],
       "@my-refine-project/newutils/*": [
         "newutils/src/*"
+      ],
+      "@my-refine-project/button": [
+        "button/src"
+      ],
+      "@my-refine-project/utils": [
+        "utils/src"
+      ],
+      "@my-refine-project/button/*": [
+        "button/src/*"
+      ],
+      "@my-refine-project/utils/*": [
+        "utils/src/*"
       ]
     }
   },
