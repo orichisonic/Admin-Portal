@@ -6,6 +6,7 @@ interface ReynsisRecord {
   // 根据你的实际表结构添加字段
   name?: string;
   created_at?: string;
+  created_by?: string;
   // 添加其他字段...
 }
 
@@ -54,6 +55,7 @@ export const ReynsisList: React.FC = () => {
               <th className="border-b px-4 py-2 text-left font-medium">ID</th>
               <th className="border-b px-4 py-2 text-left font-medium">名称</th>
               <th className="border-b px-4 py-2 text-left font-medium">创建时间</th>
+                    <th className="border-b px-4 py-2 text-left font-medium">创建人</th>
             </tr>
           </thead>
           <tbody>
@@ -68,11 +70,12 @@ export const ReynsisList: React.FC = () => {
                       : "-"
                     }
                   </td>
+                   <td className="border-b px-4 py-2">{record.created_by || "-"}</td>
                 </tr>
               ))
             ) : (
               <tr>
-                <td colSpan={3} className="h-24 text-center">
+                <td colSpan={4} className="h-24 text-center">
                   暂无数据
                 </td>
               </tr>
