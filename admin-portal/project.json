@@ -1,0 +1,31 @@
+{
+  "name": "admin-portal",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "admin-portal/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project admin-portal --web",
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest run",
+        "cwd": "admin-portal"
+      }
+    },
+    "test-ci": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest run --coverage",
+        "cwd": "admin-portal"
+      }
+    },
+    "watch-deps": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run nx watch --projects admin-portal --includeDependentProjects -- npm run nx build-deps admin-portal",
+        "cwd": "admin-portal"
+      }
+    }
+  }
+}

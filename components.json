@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "default",
+  "rsc": false,
+  "tailwind": {
+    "config": "newutils\\src\\tailwind.config.ts",
+    "css": "newutils\\src\\global.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "aliases": {
+    "ui": "@my-refine-project/newlib",
+    "components": "@my-refine-project/newlib/components",
+    "utils": "@my-refine-project/newutils",
+    "hooks": "@my-refine-project/newlib/hooks"
+  }
+}
